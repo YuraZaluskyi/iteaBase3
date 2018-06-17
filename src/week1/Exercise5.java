@@ -23,7 +23,7 @@ public class Exercise5 {
         if (number1 > number2){
             System.out.println("Difference of two numbers - " + (number1 - number2));
         } else{
-            System.out.println("Product of numbers - " +(number1*number2));
+            System.out.println("Product of numbers - " +(number1 * number2));
         }
 
 
