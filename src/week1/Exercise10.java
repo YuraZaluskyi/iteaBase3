@@ -8,9 +8,10 @@ import java.util.Scanner;
 public class Exercise10 {
     public static void main(String[] args) {
 
-        double number;
-        double binaryNumber;
-        int n = 0;
+        int number;
+        int binaryNumber;
+        int n = 1;
+        int binary = 0;
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Please, enter number - ");
@@ -19,17 +20,14 @@ public class Exercise10 {
         binaryNumber = 0;
 
         while (number > 0) {
+            binaryNumber = 0;
             if (number % 2 == 1) {
-                binaryNumber = Math.pow(10, n) + binaryNumber;
-
+                binaryNumber = n;
             }
-
-            n = n + 1;
-
+            binary = binary + binaryNumber;
+            n = n * 10;
             number = number / 2;
         }
-        System.out.println(binaryNumber);
-
-
+        System.out.println(binary);
     }
 }
